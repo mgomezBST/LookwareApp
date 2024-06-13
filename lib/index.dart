@@ -1,0 +1,158 @@
+// Export pages
+export '/therapist_views/users/login/login_widget.dart' show LoginWidget;
+export '/therapist_views/users/forgot_password/forgot_password_widget.dart'
+    show ForgotPasswordWidget;
+export '/therapist_views/users/profile/profile_widget.dart' show ProfileWidget;
+export '/therapist_views/users/edit_profile/edit_profile_widget.dart'
+    show EditProfileWidget;
+export '/therapist_views/clients/client_list/client_list_widget.dart'
+    show ClientListWidget;
+export '/therapist_views/users/success/success_widget.dart' show SuccessWidget;
+export '/therapist_views/clients/add_client/add_client_widget.dart'
+    show AddClientWidget;
+export '/therapist_views/machines/machine_list/machine_list_widget.dart'
+    show MachineListWidget;
+export '/therapist_views/machines/request_machine/request_machine_widget.dart'
+    show RequestMachineWidget;
+export '/therapist_views/reports/reports_clients/reports_clients_widget.dart'
+    show ReportsClientsWidget;
+export '/survey_manager_views/surveys/s_m_survey_list/s_m_survey_list_widget.dart'
+    show SMSurveyListWidget;
+export '/therapist_views/users/notifications/notifications_widget.dart'
+    show NotificationsWidget;
+export '/therapist_views/users/support/support_widget.dart' show SupportWidget;
+export '/therapist_views/machines/status/status_widget.dart' show StatusWidget;
+export '/therapist_views/reports/data_reports/data_reports_widget.dart'
+    show DataReportsWidget;
+export '/therapist_views/users/view_email/view_email_widget.dart'
+    show ViewEmailWidget;
+export '/therapist_views/clients/client_details/client_details_widget.dart'
+    show ClientDetailsWidget;
+export '/survey_manager_views/user/s_m_login/s_m_login_widget.dart'
+    show SMLoginWidget;
+export '/survey_manager_views/user/s_m_profile/s_m_profile_widget.dart'
+    show SMProfileWidget;
+export '/survey_manager_views/user/s_m_create_profile/s_m_create_profile_widget.dart'
+    show SMCreateProfileWidget;
+export '/survey_manager_views/user/s_m_edit_profile/s_m_edit_profile_widget.dart'
+    show SMEditProfileWidget;
+export '/survey_manager_views/user/s_m_forgot_password/s_m_forgot_password_widget.dart'
+    show SMForgotPasswordWidget;
+export '/survey_manager_views/user/s_m_notifications/s_m_notifications_widget.dart'
+    show SMNotificationsWidget;
+export '/survey_manager_views/user/s_m_support/s_m_support_widget.dart'
+    show SMSupportWidget;
+export '/survey_manager_views/s_m_dashboard/s_m_dashboard_widget.dart'
+    show SMDashboardWidget;
+export '/survey_manager_views/user/s_m_view_email/s_m_view_email_widget.dart'
+    show SMViewEmailWidget;
+export '/survey_manager_views/clients/s_m_client_list/s_m_client_list_widget.dart'
+    show SMClientListWidget;
+export '/survey_manager_views/surveys/s_m_survey_details_edit/s_m_survey_details_edit_widget.dart'
+    show SMSurveyDetailsEditWidget;
+export '/survey_manager_views/surveys/s_m_add_survey/s_m_add_survey_widget.dart'
+    show SMAddSurveyWidget;
+export '/admin_views/dashboard_admin/dashboard_admin_widget.dart'
+    show DashboardAdminWidget;
+export '/admin_views/centerlist/centerlist_widget.dart' show CenterlistWidget;
+export '/admin_views/centerdetails/centerdetails_widget.dart'
+    show CenterdetailsWidget;
+export '/admin_views/therapistlist/therapistlist_widget.dart'
+    show TherapistlistWidget;
+export '/admin_views/survey_mlist/survey_mlist_widget.dart'
+    show SurveyMlistWidget;
+export '/admin_views/addcenter/addcenter_widget.dart' show AddcenterWidget;
+export '/admin_views/add_s_m/add_s_m_widget.dart' show AddSMWidget;
+export '/admin_views/add_new_therapist/add_new_therapist_widget.dart'
+    show AddNewTherapistWidget;
+export '/admin_views/therapist_details/therapist_details_widget.dart'
+    show TherapistDetailsWidget;
+export '/caregiver_view/c_g_dashboard/c_g_dashboard_widget.dart'
+    show CGDashboardWidget;
+export '/therapist_views/psd/psd_list/psd_list_widget.dart' show PsdListWidget;
+export '/therapist_views/psd/psd_details/psd_details_widget.dart'
+    show PsdDetailsWidget;
+export '/therapist_views/psd/add_p_s_d/add_p_s_d_widget.dart' show AddPSDWidget;
+export '/therapist_views/psd/intake_assessment/intake_assessment_widget.dart'
+    show IntakeAssessmentWidget;
+export '/therapist_views/reports/therapist_assessment/therapist_assessment_widget.dart'
+    show TherapistAssessmentWidget;
+export '/therapist_views/users/policy_termsandconditions/policy_termsandconditions_widget.dart'
+    show PolicyTermsandconditionsWidget;
+export '/therapist_views/users/policy_hippa/policy_hippa_widget.dart'
+    show PolicyHippaWidget;
+export '/therapist_views/users/policy_online_privacy_notice/policy_online_privacy_notice_widget.dart'
+    show PolicyOnlinePrivacyNoticeWidget;
+export '/caregiver_view/childdetails/childdetails_widget.dart'
+    show ChilddetailsWidget;
+export '/caregiver_view/child_list/child_list_widget.dart' show ChildListWidget;
+export '/caregiver_view/c_gdata_reports/c_gdata_reports_widget.dart'
+    show CGdataReportsWidget;
+export '/therapist_views/users/providefeedback/providefeedback_widget.dart'
+    show ProvidefeedbackWidget;
+export '/therapist_views/sessions/start_session_c_l_i_e_n_t/start_session_c_l_i_e_n_t_widget.dart'
+    show StartSessionCLIENTWidget;
+export '/therapist_views/sessions/session_progress/session_progress_widget.dart'
+    show SessionProgressWidget;
+export '/therapist_views/sessions/session_end/session_end_widget.dart'
+    show SessionEndWidget;
+export '/therapist_views/users/schedule/schedule_widget.dart'
+    show ScheduleWidget;
+export '/therapist_views/users/t_h_e_r_a_p_i_s_tcreate_profile/t_h_e_r_a_p_i_s_tcreate_profile_widget.dart'
+    show THERAPISTcreateProfileWidget;
+export '/newdashboardtest/individual_child_progress/individual_child_progress_widget.dart'
+    show IndividualChildProgressWidget;
+export '/therapist_views/reports/therapist_assessment_results/therapist_assessment_results_widget.dart'
+    show TherapistAssessmentResultsWidget;
+export '/therapist_views/sessions/datainsights/datainsights_widget.dart'
+    show DatainsightsWidget;
+export '/newdashboardtest/therapistoverview/therapistoverview_widget.dart'
+    show TherapistoverviewWidget;
+export '/newdashboardtest/newdashboardtest/newdashboardtest_widget.dart'
+    show NewdashboardtestWidget;
+export '/therapist_views/clients/shareclient/shareclient_widget.dart'
+    show ShareclientWidget;
+export '/therapist_views/psd/intake_assessment_results/intake_assessment_results_widget.dart'
+    show IntakeAssessmentResultsWidget;
+export '/therapist_views/users/policy_saas/policy_saas_widget.dart'
+    show PolicySaasWidget;
+export '/caregivertest/t_e_s_t_childdetails/t_e_s_t_childdetails_widget.dart'
+    show TESTChilddetailsWidget;
+export '/caregivertest/t_e_s_t_caregiverfeedback/t_e_s_t_caregiverfeedback_widget.dart'
+    show TESTCaregiverfeedbackWidget;
+export '/caregivertest/t_e_s_t_reports_caregiver/t_e_s_t_reports_caregiver_widget.dart'
+    show TESTReportsCaregiverWidget;
+export '/caregivertest/t_e_s_t_caregiver_dashboard/t_e_s_t_caregiver_dashboard_widget.dart'
+    show TESTCaregiverDashboardWidget;
+export '/therapist_views/clients/client_list_copy/client_list_copy_widget.dart'
+    show ClientListCopyWidget;
+export '/caregivertest/t_e_s_tchild_list/t_e_s_tchild_list_widget.dart'
+    show TESTchildListWidget;
+export '/caregivertest/t_e_s_tschedule/t_e_s_tschedule_widget.dart'
+    show TESTscheduleWidget;
+export '/caregivertest/t_e_s_tprofile/t_e_s_tprofile_widget.dart'
+    show TESTprofileWidget;
+export '/caregivertest/t_e_s_tsubscriptions/t_e_s_tsubscriptions_widget.dart'
+    show TESTsubscriptionsWidget;
+export '/therapist_views/reports/power_bi/power_bi_widget.dart'
+    show PowerBiWidget;
+export '/therapist_views/reports/data_reports_copy/data_reports_copy_widget.dart'
+    show DataReportsCopyWidget;
+export '/caregivertest/t_e_s_t_caregiver_dashboard_copy/t_e_s_t_caregiver_dashboard_copy_widget.dart'
+    show TESTCaregiverDashboardCopyWidget;
+export '/therapist_views/old_dashboard/old_dashboard_widget.dart'
+    show OldDashboardWidget;
+export '/therapist_views/users/session_details/session_details_widget.dart'
+    show SessionDetailsWidget;
+export '/academy/academymenu/academymenu_widget.dart' show AcademymenuWidget;
+export '/academy/howtoaddclient/howtoaddclient_widget.dart'
+    show HowtoaddclientWidget;
+export '/academy/howtocreateapsd/howtocreateapsd_widget.dart'
+    show HowtocreateapsdWidget;
+export '/academy/howtoscheduleagamesession/howtoscheduleagamesession_widget.dart'
+    show HowtoscheduleagamesessionWidget;
+export '/therapist_views/reports/generalization_assessment/generalization_assessment_widget.dart'
+    show GeneralizationAssessmentWidget;
+export '/therapist_views/dashboard/dashboard_widget.dart' show DashboardWidget;
+export '/therapist_views/reports/requestreport/requestreport_widget.dart'
+    show RequestreportWidget;
