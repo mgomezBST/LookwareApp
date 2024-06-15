@@ -10,6 +10,12 @@ workflows:
         APP_STORE_CONNECT_API_KEY_ISSUER: ${{ secrets.APP_STORE_CONNECT_API_KEY_ISSUER }}
         APP_STORE_CONNECT_PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
     scripts:
+      - name: Install dependencies (skip pub get and pod install)
+        script: |
+          set -e
+          cd ios
+          # No ejecutar flutter pub get ni pod install
+          cd ..
       - name: Build iOS
         script: |
           set -e
