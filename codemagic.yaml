@@ -1,34 +1,23 @@
 workflows:
-  build_ios_app:
-    name: Build iOS App
+  ios-workflow:
+    name: iOS Workflow
     max_build_duration: 60
     environment:
+      flutter: stable
+      xcode: latest
       vars:
-        FLUTTER_VERSION: stable
-        XCODE_WORKSPACE: "Runner.xcworkspace"
-        XCODE_SCHEME: "Runner"
-        IOS_EXPORT_METHOD: "app-store"
-      ios_signing:
-        app_store_connect:
-          api_key_id: $APP_STORE_CONNECT_API_KEY_ID
-          api_key_issuer_id: $APP_STORE_CONNECT_API_KEY_ISSUER
-          private_key: $APP_STORE_CONNECT_PRIVATE_KEY
+        APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+        APP_STORE_CONNECT_API_KEY_ISSUER: ${{ secrets.APP_STORE_CONNECT_API_KEY_ISSUER }}
+        APP_STORE_CONNECT_PRIVATE_KEY: ${{ secrets.APP_STORE_CONNECT_PRIVATE_KEY }}
     scripts:
-      - name: Set up flutter
-        script: |
-          git clone https://github.com/flutter/flutter.git
-          export PATH="$PATH:`pwd`/flutter/bin"
-          flutter --version
-      - name: Prepare environment
-        script: |
-          cd ios
-          pod install --repo-update
       - name: Build iOS
         script: |
+          set -e
+          cd ios
+          # Copia los archivos que has subido como variables de entorno
+          echo "$APP_STORE_CONNECT_PRIVATE_KEY" > AuthKey.p8
+          # Aquí podrías agregar más comandos si es necesario
+          cd ..
           flutter build ios --release --no-codesign
-      - name: Create IPA
-        script: |
-          xcodebuild -workspace $XCODE_WORKSPACE -scheme $XCODE_SCHEME -sdk iphoneos -configuration Release archive -archivePath $HOME/Library/Developer/Xcode/Archives/$(date +%Y-%m-%d)/AppName.xcarchive
-          xcodebuild -exportArchive -archivePath $HOME/Library/Developer/Xcode/Archives/$(date +%Y-%m-%d)/AppName.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath $CI_WORKSPACE/build/ios/ipa
     artifacts:
       - build/ios/ipa/*.ipa
