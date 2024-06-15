@@ -764,7 +764,7 @@ class _TESTCaregiverDashboardCopyWidgetState
                                   child: SizedBox(
                                     width: double.infinity,
                                     height: 264.0,
-                                    child: FlutterFlowLineChart(
+                                    /*child: FlutterFlowLineChart(
                                       data: [
                                         FFLineChartData(
                                           xData: List.generate(
@@ -836,10 +836,10 @@ class _TESTCaregiverDashboardCopyWidgetState
                                                 .secondaryBackground,
                                         showBorder: false,
                                       ),
-                                      axisBounds: const AxisBounds(
+                                      /*axisBounds: const AxisBounds(
                                         minX: 1.0,
                                         maxX: 5.0,
-                                      ),
+                                      ),*/
                                       xAxisLabelInfo: AxisLabelInfo(
                                         title: 'Game Session',
                                         titleTextStyle: FlutterFlowTheme.of(
@@ -881,7 +881,7 @@ class _TESTCaregiverDashboardCopyWidgetState
                                                           .bodyMediumFamily),
                                             ),
                                       ),
-                                    ),
+                                    ),*/
                                   ),
                                 ),
                               ],

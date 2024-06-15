@@ -247,7 +247,7 @@ class _DataReportsCopyWidgetState extends State<DataReportsCopyWidget> {
                       child: SizedBox(
                         width: double.infinity,
                         height: 264.0,
-                        child: FlutterFlowLineChart(
+                        /*child: FlutterFlowLineChart(
                           data: [
                             FFLineChartData(
                               xData: List.generate(
@@ -312,7 +312,7 @@ class _DataReportsCopyWidgetState extends State<DataReportsCopyWidget> {
                                 .secondaryBackground,
                             showBorder: false,
                           ),
-                          axisBounds: const AxisBounds(),
+                          /*axisBounds: const AxisBounds(),
                           xAxisLabelInfo: AxisLabelInfo(
                             title: 'Game Session',
                             titleTextStyle: FlutterFlowTheme.of(context)
@@ -330,7 +330,7 @@ class _DataReportsCopyWidgetState extends State<DataReportsCopyWidget> {
                             labelFormatter: LabelFormatter(
                               numberFormat: (val) => val.toString(),
                             ),
-                          ),
+                          ),*/
                           yAxisLabelInfo: AxisLabelInfo(
                             title: 'Time in AOI Ratio',
                             titleTextStyle: FlutterFlowTheme.of(context)
@@ -344,7 +344,7 @@ class _DataReportsCopyWidgetState extends State<DataReportsCopyWidget> {
                                           .bodyMediumFamily),
                                 ),
                           ),
-                        ),
+                        ),*/
                       ),
                     ),
                   ],

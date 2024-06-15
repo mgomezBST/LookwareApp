@@ -32,15 +32,39 @@ target 'Runner' do
   use_modular_headers!
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-  pod 'FirebaseFirestore', :git => 'https://github.com/invertase/firestore-ios-sdk-frameworks.git', :tag => '10.22.0'
+
+  # Pods for Firebase
+  pod 'Firebase/Core', '10.27.0'
+  pod 'Firebase/Auth', '10.27.0'
+  pod 'Firebase/Firestore', '10.27.0'
+  pod 'Firebase/Functions', '10.27.0'
+  pod 'Firebase/Storage', '10.27.0'
+  pod 'Firebase/Performance', '10.27.0'
+  pod 'Firebase/Messaging', '10.27.0'
 end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
     target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '5.7.2.135.5' # Establece aquí la versión de Swift que necesitas
       config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
-      
+    end
+
+    # Aplica el parche a los archivos de las dependencias
+    if target.name == 'FirebaseStorage'
+      file_paths = [
+        "Pods/FirebaseStorage/FirebaseStorage/Sources/StorageDownloadTask.swift",
+        "Pods/FirebaseStorage/FirebaseStorage/Sources/Internal/StorageListTask.swift"
+      ]
+      file_paths.each do |file_path|
+        text = File.read(file_path)
+        # Aplica los cambios necesarios para corregir los errores de uso de self
+        new_text = text.gsub("guard let self = self else { return }", "guard let self = self else { return }\n self.")
+        new_text = new_text.gsub("if let pageSize {", "if let pageSize = self.pageSize {")
+        new_text = new_text.gsub("if let previousPageToken {", "if let previousPageToken = self.previousPageToken {")
+        File.open(file_path, "w") {|file| file.puts new_text }
+      end
     end
   end
 end

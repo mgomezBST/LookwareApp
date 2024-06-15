@@ -1,4 +1,4 @@
-import '/auth/firebase_auth/auth_util.dart';
+/*import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
@@ -20,8 +20,8 @@ class CGdataReportsWidget extends StatefulWidget {
 
   final TherapistAssessmentRecord? reports;
 
-  @override
-  State<CGdataReportsWidget> createState() => _CGdataReportsWidgetState();
+  //@override
+  //State<CGdataReportsWidget> createState() => _CGdataReportsWidgetState();
 }
 
 class _CGdataReportsWidgetState extends State<CGdataReportsWidget>
@@ -277,21 +277,21 @@ class _CGdataReportsWidgetState extends State<CGdataReportsWidget>
                                   .secondaryBackground,
                               showBorder: false,
                             ),
-                            axisBounds: const AxisBounds(),
-                            xAxisLabelInfo: AxisLabelInfo(
-                              title: 'Last 30 Days',
-                              titleTextStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                            ),
+                            //axisBounds: const AxisBounds(),
+                            //xAxisLabelInfo: AxisLabelInfo(
+                              //title: 'Last 30 Days',
+                              //titleTextStyle: FlutterFlowTheme.of(context)
+                                //  .bodyMedium
+                                  //.override(
+                                    //fontFamily: FlutterFlowTheme.of(context)
+                                      //  .bodyMediumFamily,
+                                   // letterSpacing: 0.0,
+                                   // useGoogleFonts: GoogleFonts.asMap()
+                                     //   .containsKey(
+                                       //     FlutterFlowTheme.of(context)
+                                        //        .bodyMediumFamily),
+                                 // ),
+                           // ),
                             yAxisLabelInfo: AxisLabelInfo(
                               title: 'Avg. Grade',
                               titleTextStyle: FlutterFlowTheme.of(context)
@@ -605,3 +605,4 @@ class _CGdataReportsWidgetState extends State<CGdataReportsWidget>
     );
   }
 }
+*/

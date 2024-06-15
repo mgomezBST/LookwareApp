@@ -160,7 +160,7 @@ class _DatainsightsWidgetState extends State<DatainsightsWidget> {
                                 child: SizedBox(
                                   width: 100.0,
                                   height: 100.0,
-                                  child: FlutterFlowPieChart(
+                                  /*child: FlutterFlowPieChart(
                                     data: FFPieChartData(
                                       values: [
                                         random_data.randomInteger(0, 10)
@@ -185,7 +185,7 @@ class _DatainsightsWidgetState extends State<DatainsightsWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .headlineSmallFamily),
                                         ),
-                                  ),
+                                  ),*/
                                 ),
                               ),
                               Text(
@@ -246,7 +246,7 @@ class _DatainsightsWidgetState extends State<DatainsightsWidget> {
                                 child: SizedBox(
                                   width: 100.0,
                                   height: 100.0,
-                                  child: FlutterFlowBarChart(
+                                  /*child: FlutterFlowBarChart(
                                     barData: [
                                       FFBarChartData(
                                         yData: List.generate(
@@ -273,10 +273,10 @@ class _DatainsightsWidgetState extends State<DatainsightsWidget> {
                                               .secondaryBackground,
                                       showBorder: false,
                                     ),
-                                    axisBounds: const AxisBounds(),
+                                    /*axisBounds: const AxisBounds(),
                                     xAxisLabelInfo: const AxisLabelInfo(),
-                                    yAxisLabelInfo: const AxisLabelInfo(),
-                                  ),
+                                    yAxisLabelInfo: const AxisLabelInfo(),*/
+                                  ),*/
                                 ),
                               ),
                               Text(
